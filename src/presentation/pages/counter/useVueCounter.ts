@@ -1,7 +1,7 @@
 import { ref } from 'vue';
-import CounterService from '../../domain/counter.service';
-import counterRepository from '../../infrastructure/counter.repository';
-import counterStore from '../../infrastructure/store/counter.store';
+import CounterService from '../../../domain/service/counter.service';
+import counterRepository from '../../../domain/repository/counter.repository';
+import counterStore from '../../../infrastructure/store/counter.store';
 
 const counterService = new CounterService(counterRepository);
 

@@ -1,4 +1,4 @@
-import CounterRepositoryInterface from './counter.repository.interface';
+import CounterRepositoryInterface from '../repository/counter.repository.interface';
 
 export default class CounterService {
   constructor(protected counterRepository: CounterRepositoryInterface) {}

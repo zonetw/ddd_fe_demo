@@ -1,5 +1,5 @@
 import { writable } from 'svelte/store';
-import CounterService from '../../domain/counter.service';
+import CounterService from '../../../../domain/counter.service';
 import counterRepository from '../../infrastructure/counter.repository';
 import counterStore from '../../infrastructure/store/counter.store';
 

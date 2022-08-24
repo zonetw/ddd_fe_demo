@@ -1,8 +1,8 @@
 // ====================== VUE 3 ======================
 
 import { createApp } from 'vue';
-import { router } from './modules/core/application/router';
-import App from './App.vue'
+import { router } from './infrastructure/router';
+import App from './presentation/App.vue'
 
 createApp(App)
   .use(router)

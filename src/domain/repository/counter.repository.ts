@@ -1,5 +1,5 @@
-import CounterRepositoryInterface from '../domain/counter.repository.interface';
-import counterStore from './store/counter.store';
+import CounterRepositoryInterface from './counter.repository.interface';
+import counterStore from "../../infrastructure/store/counter.store";
 
 class CounterRepository implements CounterRepositoryInterface {
   public async getCount(): Promise<number> {
