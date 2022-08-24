@@ -6,6 +6,16 @@ import { mobXStore, observe } from './mobX/counter.store.mobX';
 import { valtioStore, subscribe } from './valtio/counter.store.valtio';
 import localStorageCounter from './localStorage/counter.store.localStorage';
 
+/**
+ * Q: Why need this layer ?
+ * A: Because the implementation of every library is different.
+ * So we need to yse the same interface to access the same data.
+ *
+ * Q: Why don't use interface ?
+ * A: Because we will modify the class directly.
+ */
+
+
 // ================== VUEX ==================
 
 // class CounterStore {
